@@ -1,0 +1,70 @@
+body{
+
+}
+.logo-left{
+	float: left;
+}
+.details-right{
+	float: right;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+}
+.myname{
+	font-family: 'Maven Pro', sans-serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 500;
+}
+.mydesig{
+	font-family: 'Maven Pro', sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 400;
+}
+.header{
+	padding-bottom: 15px;
+	border-bottom: 5px solid #7d97ad;
+}
+.section1,.section2{
+	margin-top: 20px;
+}
+.section1-pic{
+	width: 100%;
+	height: 400px;
+}
+.section2-head{
+	color: #7d97ad;
+	font-family: inherit;
+}
+.section3-pic{
+	width: 100%;
+	height: 250px;
+}
+.section3-head{
+	text-transform: uppercase;
+	text-align: center;
+	font-family: inherit;
+	color: #2d3c49;
+}
+.section3-link{
+	text-align: center;
+}
+.section3-link a{
+	text-decoration: none;
+	color: #02b3e4;
+	font-size: 20px;
+	font-family: inherit;
+}
+.nav-brand-text{
+	font-family: inherit;
+	color: #02b3e4;
+	font-weight: 400;
+	margin-top: 5px;
+	font-size: 25px;
+}
+.navbar-header{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}

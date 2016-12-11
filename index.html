@@ -1,97 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Web Portfolio Udacity</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet"> 
-	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="css/style.css">
 	
 </head>
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
+
+	<!-- Bootstrap Navbar -->
+	<nav class="navbar navbar-default  clearfix">
+		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				
-			</div>
-			<div class="navbar-header">
-				<a class="nav-brand-logo" href="#">					
-					<img alt="Brand" src="logo.svg" height="30px" width="30px">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img class="logo-nav" alt="Brand" src="images/udacity_logo.png" >
 				</a>
-				<a class="nav-brand-text" href="#">Udacity</a>
-				
 			</div>
-
 			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">About Me<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->			
 		</div><!-- /.container-fluid -->
 	</nav>
+
+
 	<div class="container">
 		<header class="header">
 			<div class="row">
-				<div class="logo-left col-md-4 col-sm-12">
-					<div class=" "><img class= "logo" src="logo.svg"></div>
+				<div class="logo-left col-md-4 ">
+					<img class= "logo img-circle" src="images/ekas.jpg" alt="Personal Pic">
 				</div>
-				<div class=" col-md-4 col-md-offset-4 col-sm-12">
-					<div class="details-right myname">Jane Doette</div>
+				<div class=" col-md-4 col-md-offset-4 ">
+					<div class="details-right myname">Ekas Preet Singh</div>
 					<div class="details-right mydesig">Front End Ninja</div>
 				</div>
 			</div>
 		</header>
 
 		<section class="section1">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<img class="section1-pic" src="Sunset.jpg">
+			<article class="row">
+				<div class="col-md-12 col-sm-12 ol-xs-12">
+					<picture>
+							<source srcset="images/main_1x.jpg" media="(max-width: 767px)"/>
+						<img class="section1-pic img-responsive" src="images/main_2x.jpg" alt="Main picture">
+					</picture>
+					
 				</div>
-			</div>			
+			</article>			
 		</section>	
 
 		<section class="section2">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
+			<article class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
 					<h2 class="section2-head">Featured Work</h2>
 				</div>				
-			</div>			
+			</article>			
 		</section>
 
 		<section class="section3">
-			<div class="row">
-				<div class="col-md-4 col-sm-12">
-					<img class="section3-pic" src="Sunset.jpg">
-					<h2 class="section3-head">Appify</h2>
-					<p class="section3-link"><a href="http://github.com/udacity/appify/">Link <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></p>
+			<article class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+				<picture>
+					<source srcset="images/alumni_1x.jpg" media="(max-width: 767px)"/>
+					<img class="section3-pic img-responsive" srcset="images/alumni_2x.jpg" alt="project Alumni Network">
+				</picture>					
+				<h2 class="section3-head">Alumni Network</h2>
+				<p class="section3-link">
+					<a href="#">Link 
+						<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+					</a>
+				</p>
 				</div>	
-				<div class="col-md-4 col-sm-12">
-					<img class="section3-pic" src="Sunset.jpg">
-					<h2 class="section3-head">sunflower</h2>
-					<p class="section3-link"><a href="http://github.com/udacity/sunflower/">Link <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></p>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<picture>
+						<source srcset="images/tech_1x.jpg" media="(max-width: 767px)" />
+						<img class="section3-pic img-responsive" src="images/tech_2x.jpg" alt="project Tech M Car">
+					</picture>						
+					<h2 class="section3-head">Tech-M-Car</h2>
+					<p class="section3-link">
+						<a href="#">Link 
+							<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+						</a>
+					</p>
 				</div>	
-				<div class="col-md-4 col-sm-12">
-					<img class="section3-pic" src="Sunset.jpg">
-					<h2 class="section3-head">boweh</h2>
-					<p class="section3-link"><a href="http://github.com/udacity/boweh/">Link <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a></p>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<picture>
+						<source srcset="images/r2_1x.jpg" media="(max-width: 767px)" />
+						<img class="section3-pic img-responsive" src="images/r2_2x.jpg" alt="project Requirement Reflector">
+					</picture>
+					<h2 class="section3-head">Requirement Reflector</h2>
+					<p class="section3-link">
+						<a href="#">Link
+							<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+						</a>
+					</p>
 				</div>				
-			</div>			
+			</article>			
 		</section>
 	</div>
 
-	<div class="row"></div>
-	<div class="row"></div>
-	
 
-	<footer>
-		
+	<footer class="footer">
+		<div class="container">
+			<p>&copy;Copyright 2016 
+				<span>
+					<a href="https://udacity.com/">Udacity Inc.
+					</a>
+				</span>
+			</p>
+		</div>
 	</footer>
-
 	<!-- Jquery Cdn-->
-	<script
-	src="https://code.jquery.com/jquery-3.1.1.min.js"
-	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

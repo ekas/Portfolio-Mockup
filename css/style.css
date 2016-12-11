@@ -1,5 +1,6 @@
 body{
-
+	padding: 0;
+	margin: 0;
 }
 .logo-left{
 	float: left;
@@ -10,11 +11,19 @@ body{
 .logo{
 	width: 100px;
 	height: 100px;
+	border: 2px solid #02b3e4;
+	padding: 2px;
 }
+
+.logo-nav{
+	height: 28px;
+	width: 140px;
+}
+
 .myname{
 	font-family: 'Maven Pro', sans-serif;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 500;
 }
 .mydesig{
@@ -30,23 +39,17 @@ body{
 .section1,.section2{
 	margin-top: 20px;
 }
-.section1-pic{
-	width: 100%;
-	height: 400px;
-}
+
 .section2-head{
 	color: #7d97ad;
 	font-family: inherit;
-}
-.section3-pic{
-	width: 100%;
-	height: 250px;
 }
 .section3-head{
 	text-transform: uppercase;
 	text-align: center;
 	font-family: inherit;
 	color: #2d3c49;
+	font-size: 25px;
 }
 .section3-link{
 	text-align: center;
@@ -57,14 +60,90 @@ body{
 	font-size: 20px;
 	font-family: inherit;
 }
-.nav-brand-text{
-	font-family: inherit;
-	color: #02b3e4;
-	font-weight: 400;
-	margin-top: 5px;
-	font-size: 25px;
+
+@media (max-width: 1200px) {
+	.myname{
+		font-size: 30px;
+	}
 }
-.navbar-header{
+
+@media (max-width: 992px) {
+	.section3-head{
+		font-size: 25px;
+	}
+	.section3-link a{
+		font-size: 15px;
+	}
+	.section2-head{
+		font-size: 25px;
+	}
+	.details-right {
+		float: none;
+	}
+	.myname{
+		font-size: 35px;
+	}
+	.mydesig{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 430px) {
+	.section3-head{
+		font-size: 17px;
+	}
+	.section2-head{
+		font-size: 20px;
+	}
+	.logo{
+		width: 70px;
+		height: 70px;
+	}
+	.details-right {
+		float: left;
+	}
+	.myname{
+		font-size: 30px;
+	}
+	.mydesig{
+		font-size: 20px;
+	}
+}
+
+.footer{
+	text-align: center;
+	padding-top: 20px;
+	height: 50px;
+	background-color: #f8f8f8;
+}
+.footer a{
+	color: #02b3e4;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+}
+.footer .scrollup{
+	float: right;
+}
+.footer .new{
+	margin-left: 35px;
+}
+.footer li a{
+	text-decoration: none;
+}
+.footer ul{
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-right: 35px;
+}
+.footer li{
+	font-size: 17px;
+	list-style: none;
+	display: inline;
+}
+.footer p{
+	font-family: inherit;
+	font-size: 14px;
 }
